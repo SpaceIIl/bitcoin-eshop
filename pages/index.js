@@ -14,37 +14,41 @@ import Pie from './comp/pie.png';
 import Sandwich from './comp/sandwich.png';
 import Navbar from './comp/Navbar';
 import Footer from './comp/Footer';
+import { Provider } from 'react-redux';
+import store from '../redux/store';
 
 export default function Home() {
   return (
-    <div className='m-auto text-8xl font-medium flex'>
-      <Navbar />
-      <Footer />
-      <h1 className='pr-8'>Choose</h1>
-      <div className='text-btc-orange'>
-          <Typewriter 
-            
-          onInit={(typewriter)=> {
-        
-          typewriter
+    <Provider store={store}>
+      <div className='m-auto text-8xl font-medium flex'>
+        <Navbar />
+        <Footer />
+        <h1 className='pr-8'>Choose</h1>
+        <div className='text-btc-orange'>
+            <Typewriter 
               
-          .typeString("freedom")
-              
-          .pauseFor(2000)
-          .deleteAll()
-          .typeString("Bitcoin")
-          .start();
-          }}/>
+            onInit={(typewriter)=> {
+          
+            typewriter
+                
+            .typeString("freedom")
+                
+            .pauseFor(2000)
+            .deleteAll()
+            .typeString("Bitcoin")
+            .start();
+            }}/>
+        </div>
+        <Item Image={Apple} Ck={10} Btc={0.000011}/>
+        <Item Image={Banana} Ck={10} Btc={0.000011}/>
+        <Item Image={Can} Ck={20} Btc={0.000021}/>
+        <Item Image={Chocolate} Ck={25} Btc={0.000027}/>
+        <Item Image={Croissant} Ck={15} Btc={0.000016}/>
+        <Item Image={Donut} Ck={15} Btc={0.000016}/>
+        <Item Image={Hamburger} Ck={35} Btc={0.000038}/>
+        <Item Image={Pie} Ck={25} Btc={0.000027}/>
+        <Item Image={Sandwich} Ck={30} Btc={0.000032}/>
       </div>
-      <Item Image={Apple} Ck={10} Btc={0.000011}/>
-      <Item Image={Banana} Ck={10} Btc={0.000011}/>
-      <Item Image={Can} Ck={20} Btc={0.000021}/>
-      <Item Image={Chocolate} Ck={25} Btc={0.000027}/>
-      <Item Image={Croissant} Ck={15} Btc={0.000016}/>
-      <Item Image={Donut} Ck={15} Btc={0.000016}/>
-      <Item Image={Hamburger} Ck={35} Btc={0.000038}/>
-      <Item Image={Pie} Ck={25} Btc={0.000027}/>
-      <Item Image={Sandwich} Ck={30} Btc={0.000032}/>
-    </div>
+    </Provider>
   )
 }
