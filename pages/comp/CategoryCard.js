@@ -14,4 +14,4 @@ const CategoryCard = ({ image, name }) => {
     </div>
   );
 };
-export default CategoryCard; /// zatím k ničemu
+export default CategoryCard; // zatím k ničemu
