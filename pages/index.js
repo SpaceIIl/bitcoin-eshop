@@ -20,7 +20,7 @@ import store from '../redux/store';
 export default function Home() {
   return (
     <Provider store={store}>
-      <div className='m-auto text-8xl font-medium flex'>
+      <div className='m-auto font-medium flex'>
         <Navbar />
         <Footer />
         <h1 className='pr-8'>Choose</h1>
@@ -39,6 +39,7 @@ export default function Home() {
             .start();
             }}/>
         </div>
+        <div>
         <Item Image={Apple} Ck={10} Btc={0.000011}/>
         <Item Image={Banana} Ck={10} Btc={0.000011}/>
         <Item Image={Can} Ck={20} Btc={0.000021}/>
@@ -48,6 +49,7 @@ export default function Home() {
         <Item Image={Hamburger} Ck={35} Btc={0.000038}/>
         <Item Image={Pie} Ck={25} Btc={0.000027}/>
         <Item Image={Sandwich} Ck={30} Btc={0.000032}/>
+        </div>
       </div>
     </Provider>
   )
