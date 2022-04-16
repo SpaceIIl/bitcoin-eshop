@@ -3,7 +3,7 @@
       "id": 1,
       "product": "Apple",
       "category": "fruit",
-      "image": "/pages/comp/apple.png",
+      "image": "/public/apple.png",
       "price": 10
     },
     {
