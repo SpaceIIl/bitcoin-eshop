@@ -3,28 +3,28 @@
       "id": 1,
       "product": "Apple",
       "category": "fruit",
-      "image": "/public/apple.png",
+      "image": "/apple.png",
       "price": 10
     },
     {
       "id": 2,
       "product": "Banana",
       "category": "fruit",
-      "image": "/pages/comp/banana.png",
+      "image": "/banana.png",
       "price": 10
     },
     {
       "id": 3,
       "product": "Can",
       "category": "trash",
-      "image": "/pages/comp/can.png",
+      "image": "/can.png",
       "price": 20
     },
     {
       "id": 4,
       "product": "Chococlate",
       "category": "candy",
-      "image": "/pages/comp/chocolate.png",
+      "image": "/chocolate.png",
       "price": 25
     }
   ]
