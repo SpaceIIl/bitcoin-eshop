@@ -12,10 +12,14 @@ import Donut from './comp/donut.png';
 import Hamburger from './comp/hamburger.png';
 import Pie from './comp/pie.png';
 import Sandwich from './comp/sandwich.png';
+import Navbar from './comp/Navbar';
+import Footer from './comp/Footer';
 
 export default function Home() {
   return (
     <div className='m-auto text-8xl font-medium flex'>
+      <Navbar />
+      <Footer />
       <h1 className='pr-8'>Choose</h1>
       <div className='text-btc-orange'>
           <Typewriter 
