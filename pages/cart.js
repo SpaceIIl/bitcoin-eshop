@@ -6,6 +6,12 @@ import {
   decrementQuantity,
   removeFromCart,
 } from '../redux/cart.slice';
+import toast, { Toaster } from 'react-hot-toast';
+
+const notifyPlus = () => toast('Successfully added');
+const notifyMinus = () => toast('Successfully removed');
+const notifyMinusAll = () => toast('Successfully removed all');
+
 
 const CartPage = () => {
 
@@ -40,10 +46,16 @@ const CartPage = () => {
                   <p>{item.btcprice} BTC</p>
                   <p>{item.quantity}x</p>
                     <div className=''>
-                      <button className='m-1' onClick={() => dispatch(incrementQuantity(item.id))}>
+                      <button className='m-1' onClick={() => {
+                        dispatch(incrementQuantity(item.id))
+                        notifyPlus()
+                        }}>
                         +
                       </button>
-                      <button className='m-1' onClick={() => dispatch(decrementQuantity(item.id))}>
+                      <button className='m-1' onClick={() => {
+                        dispatch(decrementQuantity(item.id))
+                        notifyMinus()
+                        }}>
                         -
                       </button>
                       <button className='m-1' onClick={() => dispatch(removeFromCart(item.id))}>
