@@ -1,4 +1,4 @@
-import ProductCard from './comp/ProductCard';
+/*import ProductCard from './comp/ProductCard';
 import { getProducts } from './api/products/index';
 
 const ShopPage = ({ products }) => {
@@ -19,4 +19,4 @@ export default ShopPage;
 export async function getStaticProps() {
   const products = await getProducts();
   return { props: { products } };
-}
+}*/
