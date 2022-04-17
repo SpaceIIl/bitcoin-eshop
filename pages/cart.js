@@ -58,7 +58,10 @@ const CartPage = () => {
                         }}>
                         -
                       </button>
-                      <button className='m-1' onClick={() => dispatch(removeFromCart(item.id))}>
+                      <button className='m-1' onClick={() => {
+                        dispatch(removeFromCart(item.id))
+                        notifyMinusAll()
+                        }}>
                         x
                       </button>
                     </div>
