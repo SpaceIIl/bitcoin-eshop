@@ -47,7 +47,7 @@ export default function Home({ products, product }) {
             </div>
           </div>
         </div>
-      <div>
+      <div className={styles.card}>
         {products.map((product) => (
           <ProductCard key={product.id} product={product} />
         ))}

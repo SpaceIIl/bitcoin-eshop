@@ -26,5 +26,19 @@
       "category": "candy",
       "image": "/chocolate.png",
       "price": 25
+    },
+    {
+      "id": 5,
+      "product": "Croissant",
+      "category": "food",
+      "image": "/croissant.png",
+      "price": 20
+    },
+    {
+      "id": 6,
+      "product": "Croissant",
+      "category": "food",
+      "image": "/croissant.png",
+      "price": 20
     }
   ]

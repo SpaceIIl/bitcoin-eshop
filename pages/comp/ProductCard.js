@@ -14,7 +14,7 @@ const ProductCard = ({ product }) => {
       <p>{product.price} CZK</p>
       <button onClick={() => dispatch(addToCart(product))} >Add to Cart</button>
     </div>*/
-    <div className="w-[22rem] h-[22rem] bg-fuckin-gray rounded-2xl shadow-niga m-auto mt-12 grid">
+    <div className="w-[22rem] h-[22rem] bg-fuckin-gray rounded-2xl shadow-niga grid">
       <div className="m-auto mt-8">
         <Image src={product.image} height={200} width={200} />
       </div>
