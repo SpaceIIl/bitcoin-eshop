@@ -7,6 +7,7 @@ import {
   removeFromCart,
 } from '../redux/cart.slice';
 import toast, { Toaster } from 'react-hot-toast';
+import Qr from './qr';
 
 const notifyPlus = () => toast('Successfully added');
 const notifyMinus = () => toast('Successfully removed');
@@ -71,7 +72,10 @@ const CartPage = () => {
               </div>
             ))}
         </div>
-          <h2 className='flex justify-center text-2xl p-4'>Grand Total:  {getTotalPrice()} CZK</h2>
+        <div className='flex justify-center'>
+          <h2 className='text-2xl p-4'>Grand Total:  {getTotalPrice()} CZK</h2>
+          <Qr text="12c6DSiU4Rq3P4ZxziKxzrL5LmMBrzjrJX"/>
+        </div>
         </div>
       )}
     </div>

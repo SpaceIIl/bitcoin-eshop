@@ -18,9 +18,7 @@ import { Provider } from 'react-redux';
 import store from '../redux/store';
 import Cart from './cart';
 import toast, { Toaster } from 'react-hot-toast';
-import Qr from './qr';
 
-//import Shop from './shop';
 import ProductCard from './comp/ProductCard';
 import { getProducts } from './api/products/index';
 
@@ -60,7 +58,6 @@ export default function Home({ products, product }) {
       <Cart />
     </div>
     <Footer />
-    <Qr text="120kc"/>
     </Provider>
   )
 }
