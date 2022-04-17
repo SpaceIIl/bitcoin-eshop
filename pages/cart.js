@@ -30,7 +30,7 @@ const CartPage = () => {
         </div>
         <div className={styles.cart}>
           {cart.map((item) => (
-              <div>
+              <div className='font-medium text-base'>
                 <div>
                   <div>
                     <Image src={item.image} height="120" width="120" />
@@ -39,14 +39,14 @@ const CartPage = () => {
                   <p>{item.price} CZK</p>
                   <p>{item.btcprice} BTC</p>
                   <p>{item.quantity}x</p>
-                  <div>
-                    <button onClick={() => dispatch(incrementQuantity(item.id))}>
+                    <div className=''>
+                      <button className='m-1' onClick={() => dispatch(incrementQuantity(item.id))}>
                         +
                       </button>
-                      <button onClick={() => dispatch(decrementQuantity(item.id))}>
+                      <button className='m-1' onClick={() => dispatch(decrementQuantity(item.id))}>
                         -
                       </button>
-                      <button onClick={() => dispatch(removeFromCart(item.id))}>
+                      <button className='m-1' onClick={() => dispatch(removeFromCart(item.id))}>
                         x
                       </button>
                     </div>

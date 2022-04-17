@@ -25,6 +25,7 @@ import { getProducts } from './api/products/index';
 export default function Home({ products, product }) {
   return (
     <Provider store={store}>
+    <div><Toaster/></div>
     <Navbar />
     <div className='w-4/5 m-auto'>
         <div className='h-96 text-6xl font-sans font-medium flex justify-center pt-32'>

@@ -7,13 +7,6 @@ const ProductCard = ({ product }) => {
     const dispatch = useDispatch();
 
   return (
-    /*<div>
-      <Image src={product.image} height={200} width={200} />
-      <h4>{product.product}</h4>
-      <h5>{product.category}</h5>
-      <p>{product.price} CZK</p>
-      <button onClick={() => dispatch(addToCart(product))} >Add to Cart</button>
-    </div>*/
     <div className="w-[22rem] h-[22rem] bg-fuckin-gray rounded-2xl shadow-niga grid">
       <div className="m-auto mt-8">
         <Image src={product.image} height={200} width={200} />
