@@ -2,9 +2,9 @@ import Link from 'next/link';
 
 const Navbar = () => {
   return (
-    <nav>
-      <h6>Bitcoin shop</h6>
-      <ul>
+    <nav className='flex justify-between px-4 py-2'>
+      <Link href="/">Bitcoin shop</Link>
+      <ul className='flex'>
         <li>
           <Link href="/">Home</Link>
         </li>

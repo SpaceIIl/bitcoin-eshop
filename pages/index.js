@@ -20,11 +20,10 @@ import store from '../redux/store';
 export default function Home() {
   return (
     <Provider store={store}>
-      <div className='m-auto font-medium flex'>
+      <div className=''>
         <Navbar />
-        <Footer />
         <a href="#test">test</a>
-        <h1 className='pr-8'>Choose</h1>
+        <h2 className='pr-8'>Choose</h2>
         <div className='text-btc-orange'>
             <Typewriter 
               
@@ -41,10 +40,11 @@ export default function Home() {
             }}/>
         </div>
         <div>
-        <Item Image={Apple} Ck={10} Btc={0.000011}/>
-        <Item Image={Banana} Ck={10} Btc={0.000011}/>
-        <p id="test">teeeest</p>
+          <Item Image={Apple} Ck={10} Btc={0.000011}/>
+          <Item Image={Banana} Ck={10} Btc={0.000011}/>
+          <p id="test">teeeest</p>
         </div>
+        <Footer />
       </div>
     </Provider>
   )
