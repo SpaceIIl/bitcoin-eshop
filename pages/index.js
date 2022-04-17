@@ -23,6 +23,7 @@ export default function Home() {
       <div className='m-auto font-medium flex'>
         <Navbar />
         <Footer />
+        <a href="#test">test</a>
         <h1 className='pr-8'>Choose</h1>
         <div className='text-btc-orange'>
             <Typewriter 
@@ -42,15 +43,17 @@ export default function Home() {
         <div>
         <Item Image={Apple} Ck={10} Btc={0.000011}/>
         <Item Image={Banana} Ck={10} Btc={0.000011}/>
-        <Item Image={Can} Ck={20} Btc={0.000021}/>
-        <Item Image={Chocolate} Ck={25} Btc={0.000027}/>
-        <Item Image={Croissant} Ck={15} Btc={0.000016}/>
-        <Item Image={Donut} Ck={15} Btc={0.000016}/>
-        <Item Image={Hamburger} Ck={35} Btc={0.000038}/>
-        <Item Image={Pie} Ck={25} Btc={0.000027}/>
-        <Item Image={Sandwich} Ck={30} Btc={0.000032}/>
+        <p id="test">teeeest</p>
         </div>
       </div>
     </Provider>
   )
 }
+
+/*         <Item Image={Can} Ck={20} Btc={0.000021}/>
+        <Item Image={Chocolate} Ck={25} Btc={0.000027}/>
+        <Item Image={Croissant} Ck={15} Btc={0.000016}/>
+        <Item Image={Donut} Ck={15} Btc={0.000016}/>
+        <Item Image={Hamburger} Ck={35} Btc={0.000038}/>
+        <Item Image={Pie} Ck={25} Btc={0.000027}/>
+        <Item Image={Sandwich} Ck={30} Btc={0.000032}/> */
