@@ -1,6 +1,9 @@
 import Image from 'next/image';
 import { useDispatch } from 'react-redux';
 import { addToCart } from '../../redux/cart.slice';
+import toast, { Toaster } from 'react-hot-toast';
+
+const notify = () => toast('Successfully added');
 
 const ProductCard = ({ product }) => {
 
@@ -16,7 +19,11 @@ const ProductCard = ({ product }) => {
           <p>{product.price} CZK</p>
           <p className='pt-2'>{product.btcprice} BTC</p>
         </div>
-        <button className="w-16 h-14 ml-20 bg-dark-gray rounded-md shadow-niga font-sans font-normal" onClick={() => dispatch(addToCart(product))}  >+ 1</button>
+        <button className="w-16 h-14 ml-20 bg-dark-gray rounded-md shadow-niga font-sans font-normal" 
+          onClick={() => {
+          dispatch(addToCart(product))
+          notify()
+          }} >+ 1</button>
       </div>
     </div>
   );
