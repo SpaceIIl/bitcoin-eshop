@@ -25,39 +25,38 @@ const CartPage = () => {
         <h1 className='flex justify-center pt-10 pb-20 text-3xl'>Your Cart is Empty!</h1>
       ) : (
         <div>
-          <div>
-            <div>Image</div>
-            <div>Product</div>
-            <div>Price</div>
-            <div>Quantity</div>
-            <div>Actions</div>
-            <div>Total Price</div>
-          </div>
+        <div className='flex justify-center text-2xl p-5'>
+          <h3>Cart</h3>
+        </div>
+        <div className={styles.cart}>
           {cart.map((item) => (
-            <div className={styles.card}>
               <div>
                 <div>
-                  <Image src={item.image} height="120" width="120" />
-                </div>
-                <p>{item.product}</p>
-                <p>{item.price} CZK</p>
-                <p>{item.quantity}x</p>
-                <div>
-                  <button onClick={() => dispatch(incrementQuantity(item.id))}>
-                      +
-                    </button>
-                    <button onClick={() => dispatch(decrementQuantity(item.id))}>
-                      -
-                    </button>
-                    <button onClick={() => dispatch(removeFromCart(item.id))}>
-                      x
-                    </button>
+                  <div>
+                    <Image src={item.image} height="120" width="120" />
                   </div>
-                <p>{item.quantity * item.price} CZK</p>
+                  <p>{item.product}</p>
+                  <p>{item.price} CZK</p>
+                  <p>{item.btcprice} BTC</p>
+                  <p>{item.quantity}x</p>
+                  <div>
+                    <button onClick={() => dispatch(incrementQuantity(item.id))}>
+                        +
+                      </button>
+                      <button onClick={() => dispatch(decrementQuantity(item.id))}>
+                        -
+                      </button>
+                      <button onClick={() => dispatch(removeFromCart(item.id))}>
+                        x
+                      </button>
+                    </div>
+                  <p>{item.quantity * item.price} CZK</p>
+                  <p>{item.quantity * item.btcprice} BTC</p>
+                </div>
               </div>
-            </div>
-          ))}
-          <h2>Grand Total:  {getTotalPrice()} CZK</h2>
+            ))}
+        </div>
+          <h2 className='flex justify-center text-2xl p-4'>Grand Total:  {getTotalPrice()} CZK</h2>
         </div>
       )}
     </div>

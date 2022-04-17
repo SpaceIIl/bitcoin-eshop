@@ -27,7 +27,7 @@ export default function Home({ products, product }) {
     <Provider store={store}>
     <Navbar />
     <div className='w-4/5 m-auto'>
-        <div className='h-340 text-6xl font-sans font-medium m-auto'>
+        <div className='h-96 text-6xl font-sans font-medium flex justify-center pt-32'>
           <div className='flex'>
             <h1 className='pr-8'>Choose</h1>
             <div className='text-btc-orange'>
@@ -47,13 +47,15 @@ export default function Home({ products, product }) {
             </div>
           </div>
         </div>
-      <div className={styles.card}>
+      <div  id='shop' className={styles.card}>
         {products.map((product) => (
           <ProductCard key={product.id} product={product} />
         ))}
       </div>
     </div>
-    <Cart />
+    <div id='cart'>
+      <Cart />
+    </div>
     <Footer />
     </Provider>
   )

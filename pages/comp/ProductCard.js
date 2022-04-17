@@ -21,7 +21,7 @@ const ProductCard = ({ product }) => {
       <div className='flex'>
         <div className='pl-8 font-sans font-normal w-1/2'>
           <p>{product.price} CZK</p>
-          <p className='pt-2'>cena v btc</p>
+          <p className='pt-2'>{product.btcprice} BTC</p>
         </div>
         <button className="w-16 h-14 ml-20 bg-dark-gray rounded-md shadow-niga font-sans font-normal" onClick={() => dispatch(addToCart(product))}  >+ 1</button>
       </div>

@@ -4,41 +4,47 @@
       "product": "Apple",
       "category": "fruit",
       "image": "/apple.png",
-      "price": 10
+      "price": 10,
+      "btcprice": 0.005
     },
     {
       "id": 2,
       "product": "Banana",
       "category": "fruit",
       "image": "/banana.png",
-      "price": 10
+      "price": 10,
+      "btcprice": 0.0002
     },
     {
       "id": 3,
       "product": "Can",
       "category": "trash",
       "image": "/can.png",
-      "price": 20
+      "price": 20,
+      "btcprice": 0.0002
     },
     {
       "id": 4,
       "product": "Chococlate",
       "category": "candy",
       "image": "/chocolate.png",
-      "price": 25
+      "price": 25,
+      "btcprice": 0.0002
     },
     {
       "id": 5,
       "product": "Croissant",
       "category": "food",
       "image": "/croissant.png",
-      "price": 20
+      "price": 20,
+      "btcprice": 0.0002
     },
     {
       "id": 6,
       "product": "Croissant",
       "category": "food",
       "image": "/croissant.png",
-      "price": 20
+      "price": 20,
+      "btcprice": 0.0002
     }
   ]
