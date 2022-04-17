@@ -39,7 +39,7 @@ export default function Home({ products, product }) {
                       
                   .typeString("freedom")
                       
-                  .pauseFor(2000)
+                  .pauseFor(1700)
                   .deleteAll()
                   .typeString("Bitcoin")
                   .start();

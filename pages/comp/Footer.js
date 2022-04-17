@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <footer className="bg-fuckin-gray text-center h-40 mt-20 text-x1 font-medium">
+    <footer className="bg-fuckin-gray text-center h-40 text-x1 font-medium">
     <div className="pt-5">
     Copyright <span>Bitcoin</span>{' '}
       {new Date().getFullYear()}
