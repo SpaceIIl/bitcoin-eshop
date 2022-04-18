@@ -73,7 +73,7 @@ const CartPage = () => {
             ))}
         </div>
         <div className='flex justify-center'>
-          <h2 className='text-2xl p-4'>Grand Total:  {getTotalPrice()} CZK</h2>
+          <h2 className='text-2xl p-4'>Total price:  {getTotalPrice()} CZK to be sent on this bitcoin address</h2>
           <Qr text="12c6DSiU4Rq3P4ZxziKxzrL5LmMBrzjrJX"/>
         </div>
         </div>
